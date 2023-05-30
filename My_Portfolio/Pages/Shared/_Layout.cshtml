@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyPortfolio</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyPortfolio.styles.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/css/themify-icons.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/maicons.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/minibar.virtual.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/topbar.virtual.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/virtual.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/nice-select.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/jquery.fancybox.min.css" type="text/css" />
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - MyPortfolio - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>*@
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/google-maps.js"></script>
+    <script src="~/js/isotope.pkgd.min.js"></script>
+    <script src="~/js/jquery-3.5.1.min.js"></script>
+    <script src="~/js/jquery.animateNumber.min.js"></script>
+    <script src="~/js/jquery.fancybox.min.js"></script>
+    <script src="~/js/jquery.nice-select.min.js"></script>
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <script src="~/js/minibar-virtual.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/topbar-virtual.js"></script>
+    <script src="~/js/wow.min.js"></script>
+
+
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
